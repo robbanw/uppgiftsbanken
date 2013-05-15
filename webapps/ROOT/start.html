@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Uppgiftsbanken</title>
+</head>
+<script src="TaskScripts.js" type="text/javascript" ></script>
+<link href="TaskLayout.css" rel="stylesheet"></link>
+<body>
+<form name="selectionForm" action="/LoginController">
+<input id="typeID" type="hidden" name="action">
+
+<div id="studentContainer" onmouseover="mHover(this,'#32CD32')" onmouseout="mHover(this,'#228B22')" onclick="submitForm('Student')">
+<p class="centeredText">Student</p>
+</div>
+
+<div id="employerContainer" onmouseover="mHover(this,'#1E90FF')" onmouseout="mHover(this,'#4169E1')" onclick="submitForm('Uppdragsgivare')">
+<p class="centeredText">Uppdragsgivare</p>
+</div>
+
+<form>
+</body>
+</html>

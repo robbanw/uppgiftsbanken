@@ -1,0 +1,696 @@
+2013-mar-02 12:01:19 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 12:01:27 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:01:27 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 8982 ms
+2013-mar-02 12:01:28 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 12:01:28 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 12:01:28 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 12:01:29 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 12:01:30 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 12:01:30 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 12:01:31 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 12:01:32 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 12:01:34 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:01:34 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 12:01:34 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/42  config=null
+2013-mar-02 12:01:34 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6768 ms
+2013-mar-02 12:03:12 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:03:13 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 12:03:13 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 12:03:13 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 12:03:13 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:03:27 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 12:03:34 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:03:34 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7687 ms
+2013-mar-02 12:03:34 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 12:03:34 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 12:03:34 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 12:03:36 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 12:03:36 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 12:03:37 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 12:03:37 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 12:03:39 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 12:03:41 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:03:41 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 12:03:41 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/44  config=null
+2013-mar-02 12:03:41 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6515 ms
+2013-mar-02 12:04:21 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:04:22 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 12:04:22 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 12:04:22 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 12:04:22 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:06:02 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 12:06:10 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:06:10 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7574 ms
+2013-mar-02 12:06:10 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 12:06:10 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 12:06:10 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 12:06:11 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 12:06:12 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 12:06:13 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 12:06:13 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 12:06:14 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 12:06:16 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:06:16 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 12:06:16 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/41  config=null
+2013-mar-02 12:06:16 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6521 ms
+2013-mar-02 12:48:42 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:48:43 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 12:48:43 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 12:48:43 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 12:48:43 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:49:43 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 12:49:51 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:49:51 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7650 ms
+2013-mar-02 12:49:51 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 12:49:51 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 12:49:51 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 12:49:52 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 12:49:53 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 12:49:54 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 12:49:54 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 12:49:55 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 12:49:57 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:49:57 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 12:49:57 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/41  config=null
+2013-mar-02 12:49:57 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6587 ms
+2013-mar-02 12:54:46 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:54:47 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 12:54:47 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 12:54:47 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 12:54:47 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:54:53 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 12:55:00 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:55:00 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7626 ms
+2013-mar-02 12:55:00 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 12:55:00 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 12:55:00 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 12:55:02 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 12:55:02 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 12:55:03 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 12:55:04 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 12:55:05 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 12:55:07 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:55:07 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 12:55:07 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/41  config=null
+2013-mar-02 12:55:07 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6530 ms
+2013-mar-02 12:58:38 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:58:39 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 12:58:39 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 12:58:39 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 12:58:39 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 12:58:39 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:58:44 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 12:58:51 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:58:51 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7790 ms
+2013-mar-02 12:58:51 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 12:58:51 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 12:58:51 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 12:58:53 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 12:58:53 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 12:58:54 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 12:58:54 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 12:58:56 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 12:58:57 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 12:58:58 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 12:58:58 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/43  config=null
+2013-mar-02 12:58:58 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6559 ms
+2013-mar-02 13:01:19 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:01:20 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 13:01:20 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 13:01:20 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 13:01:20 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:01:25 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 13:01:32 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:01:32 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7609 ms
+2013-mar-02 13:01:32 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 13:01:32 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 13:01:32 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 13:01:34 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 13:01:34 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 13:01:35 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 13:01:35 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 13:01:37 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 13:01:39 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:01:39 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 13:01:39 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/41  config=null
+2013-mar-02 13:01:39 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6570 ms
+2013-mar-02 13:04:18 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:04:19 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 13:04:19 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 13:04:19 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 13:04:19 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:04:26 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 13:04:33 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:04:33 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7745 ms
+2013-mar-02 13:04:33 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 13:04:33 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 13:04:33 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 13:04:35 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 13:04:35 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 13:04:36 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 13:04:36 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 13:04:38 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 13:04:39 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:04:40 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 13:04:40 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/43  config=null
+2013-mar-02 13:04:40 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6609 ms
+2013-mar-02 13:16:31 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:16:32 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 13:16:32 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 13:16:32 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 13:16:32 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:18:11 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 13:18:18 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:18:18 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7550 ms
+2013-mar-02 13:18:18 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 13:18:18 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 13:18:18 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 13:18:20 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 13:18:20 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 13:18:21 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 13:18:22 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 13:18:23 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 13:18:25 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:18:25 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 13:18:25 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/42  config=null
+2013-mar-02 13:18:25 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6565 ms
+2013-mar-02 13:20:14 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:20:15 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 13:20:15 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 13:20:15 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 13:20:15 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:20:20 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 13:20:27 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:20:27 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7598 ms
+2013-mar-02 13:20:27 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 13:20:27 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 13:20:27 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 13:20:29 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 13:20:29 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 13:20:30 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 13:20:30 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 13:20:31 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 13:20:33 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:20:34 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 13:20:34 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/42  config=null
+2013-mar-02 13:20:34 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6564 ms
+2013-mar-02 13:21:43 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:21:44 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 13:21:44 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 13:21:44 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 13:21:44 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:21:50 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 13:21:57 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:21:57 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7562 ms
+2013-mar-02 13:21:57 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 13:21:57 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 13:21:57 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 13:21:58 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 13:21:59 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 13:22:00 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 13:22:00 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 13:22:01 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 13:22:03 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:22:03 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 13:22:03 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/41  config=null
+2013-mar-02 13:22:03 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6554 ms
+2013-mar-02 13:25:02 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:25:03 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 13:25:03 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 13:25:03 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 13:25:03 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:25:52 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 13:25:59 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:25:59 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7588 ms
+2013-mar-02 13:25:59 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 13:25:59 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 13:25:59 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 13:26:01 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 13:26:01 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 13:26:02 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 13:26:02 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 13:26:04 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 13:26:05 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:26:06 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 13:26:06 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/39  config=null
+2013-mar-02 13:26:06 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6556 ms
+2013-mar-02 13:32:15 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:32:16 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 13:32:16 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 13:32:16 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 13:32:16 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 13:32:16 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:32:30 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 13:32:38 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:32:38 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7584 ms
+2013-mar-02 13:32:38 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 13:32:38 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 13:32:38 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 13:32:39 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 13:32:40 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 13:32:41 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 13:32:41 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 13:32:42 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 13:32:44 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:32:44 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 13:32:44 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/42  config=null
+2013-mar-02 13:32:44 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6589 ms
+2013-mar-02 13:34:10 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:34:11 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 13:34:11 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 13:34:11 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 13:34:11 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 13:34:11 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:34:14 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 13:34:27 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 13:34:34 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:34:34 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7640 ms
+2013-mar-02 13:34:34 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 13:34:34 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 13:34:34 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 13:34:36 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 13:34:36 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 13:34:37 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 13:34:37 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 13:34:39 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 13:34:41 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 13:34:41 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 13:34:41 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/41  config=null
+2013-mar-02 13:34:41 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6565 ms
+2013-mar-02 14:59:24 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 14:59:25 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 14:59:25 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 14:59:25 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 14:59:25 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 14:59:25 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:02:47 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 15:02:54 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:02:54 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 8091 ms
+2013-mar-02 15:02:55 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 15:02:55 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 15:02:55 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 15:02:56 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 15:02:57 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 15:02:57 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 15:02:58 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 15:02:59 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 15:03:01 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:03:01 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 15:03:01 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=1/43  config=null
+2013-mar-02 15:03:01 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6680 ms
+2013-mar-02 15:11:41 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:11:42 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 15:11:42 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 15:11:42 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 15:11:42 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:11:47 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 15:11:55 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:11:55 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7774 ms
+2013-mar-02 15:11:55 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 15:11:55 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 15:11:55 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 15:11:56 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 15:11:57 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 15:11:58 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 15:11:58 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 15:11:59 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 15:12:01 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:12:01 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 15:12:01 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/41  config=null
+2013-mar-02 15:12:01 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6699 ms
+2013-mar-02 15:23:29 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:23:30 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 15:23:30 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 15:23:30 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 15:23:30 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 15:23:30 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 15:23:30 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:23:38 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.5.0_22\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_22\bin
+2013-mar-02 15:23:45 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:23:45 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7815 ms
+2013-mar-02 15:23:45 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+2013-mar-02 15:23:45 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+2013-mar-02 15:23:45 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+2013-mar-02 15:23:47 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+2013-mar-02 15:23:48 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor openejb.xml
+2013-mar-02 15:23:48 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+2013-mar-02 15:23:49 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+2013-mar-02 15:23:50 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2013-mar-02 15:23:52 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+2013-mar-02 15:23:52 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+2013-mar-02 15:23:52 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/41  config=null
+2013-mar-02 15:23:52 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6685 ms
+2013-mar-02 16:35:51 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+2013-mar-02 16:35:52 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+2013-mar-02 16:35:52 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+ALLVARLIG: A web application appears to have started a TimerThread named [Timer-1] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+2013-mar-02 16:35:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 16:35:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+ALLVARLIG: A web application appears to have started a thread named [StatelessPool] but has failed to stop it. This is very likely to create a memory leak.
+2013-mar-02 16:35:53 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080

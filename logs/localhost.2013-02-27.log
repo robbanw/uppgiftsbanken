@@ -1,0 +1,313 @@
+2013-feb-27 20:56:34 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-feb-27 20:56:34 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-feb-27 20:56:45 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-feb-27 20:56:45 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-feb-27 20:58:02 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-feb-27 20:58:02 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-feb-27 20:58:28 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-feb-27 20:58:28 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-feb-27 21:05:59 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-feb-27 21:05:59 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-feb-27 21:06:25 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 10 in the jsp file: /ejblocaltest.jsp
+Hello cannot be resolved to a type
+7: 	p.setProperty(Context.INITIAL_CONTEXT_FACTORY, "org.apache.openejb.client.LocalInitialContextFactory");
+8: 	Context ctx = new InitialContext(p);
+9: 
+10: 	Hello h = (Hello)ctx.lookup("HelloEJBLocal");
+11: 	out.println("<p>EJB information: " + h);
+12: 	out.println("<p>Result of call: " + h.sayHello());
+13: 
+
+
+An error occurred at line: 10 in the jsp file: /ejblocaltest.jsp
+Hello cannot be resolved to a type
+7: 	p.setProperty(Context.INITIAL_CONTEXT_FACTORY, "org.apache.openejb.client.LocalInitialContextFactory");
+8: 	Context ctx = new InitialContext(p);
+9: 
+10: 	Hello h = (Hello)ctx.lookup("HelloEJBLocal");
+11: 	out.println("<p>EJB information: " + h);
+12: 	out.println("<p>Result of call: " + h.sayHello());
+13: 
+
+
+An error occurred at line: 16 in the jsp file: /ejblocaltest.jsp
+Car cannot be resolved to a type
+13: 
+14: 	// Interfacet c används för att skapa upp och söka reda på EJB:er
+15: 	// Betrakta det som att c representerar hela tabellen.
+16: 	Car c = (Car)ctx.lookup("CarEJBLocal");
+17: 	out.println("<p>EJB information: " + c);
+18: 	c.addCar("Volvo");
+19: 	// ce är en instans av CarEJBLocal
+
+
+An error occurred at line: 16 in the jsp file: /ejblocaltest.jsp
+Car cannot be resolved to a type
+13: 
+14: 	// Interfacet c används för att skapa upp och söka reda på EJB:er
+15: 	// Betrakta det som att c representerar hela tabellen.
+16: 	Car c = (Car)ctx.lookup("CarEJBLocal");
+17: 	out.println("<p>EJB information: " + c);
+18: 	c.addCar("Volvo");
+19: 	// ce är en instans av CarEJBLocal
+
+
+An error occurred at line: 20 in the jsp file: /ejblocaltest.jsp
+CarEntity cannot be resolved to a type
+17: 	out.println("<p>EJB information: " + c);
+18: 	c.addCar("Volvo");
+19: 	// ce är en instans av CarEJBLocal
+20: 	CarEntity ce = (CarEntity)c.findByPrimaryKey(1);
+21: 	out.println("<p>Brand: " + ce.getName());
+22: 	ce.setName("Saab");
+23: 	c.update(ce);
+
+
+An error occurred at line: 20 in the jsp file: /ejblocaltest.jsp
+CarEntity cannot be resolved to a type
+17: 	out.println("<p>EJB information: " + c);
+18: 	c.addCar("Volvo");
+19: 	// ce är en instans av CarEJBLocal
+20: 	CarEntity ce = (CarEntity)c.findByPrimaryKey(1);
+21: 	out.println("<p>Brand: " + ce.getName());
+22: 	ce.setName("Saab");
+23: 	c.update(ce);
+
+
+An error occurred at line: 28 in the jsp file: /ejblocaltest.jsp
+CarEntity cannot be resolved to a type
+25: 	java.util.List li = c.findAll();
+26: 	out.println("<p>Iteration");
+27: 	for(int i = 0; i < li.size(); i++){
+28:    	    	ce = (CarEntity)li.get(i);
+29: 		out.println("<p>Brand: " + ce.getName());
+30: 	}
+31: }
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-feb-27 21:06:43 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-feb-27 21:06:43 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-feb-27 21:07:32 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-feb-27 21:07:32 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-feb-27 21:07:50 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:200)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:164)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1253)
+	at org.apache.commons.dbcp.managed.BasicManagedDataSource.createConnectionFactory(BasicManagedDataSource.java:99)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1192)
+	at org.apache.openejb.resource.jdbc.BasicManagedDataSource.createDataSource(BasicManagedDataSource.java:116)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:884)
+	at org.apache.openjpa.lib.jdbc.DelegatingDataSource.getConnection(DelegatingDataSource.java:106)
+	at org.apache.openjpa.lib.jdbc.DecoratingDataSource.getConnection(DecoratingDataSource.java:87)
+	at org.apache.openjpa.jdbc.sql.DBDictionaryFactory.newDBDictionary(DBDictionaryFactory.java:91)
+	at org.apache.openjpa.jdbc.conf.JDBCConfigurationImpl.getDBDictionaryInstance(JDBCConfigurationImpl.java:562)
+	at org.apache.openjpa.jdbc.meta.MappingRepository.endConfiguration(MappingRepository.java:1265)
+	at org.apache.openjpa.lib.conf.Configurations.configureInstance(Configurations.java:505)
+	at org.apache.openjpa.lib.conf.Configurations.configureInstance(Configurations.java:430)
+	at org.apache.openjpa.lib.conf.PluginValue.instantiate(PluginValue.java:103)
+	at org.apache.openjpa.conf.MetaDataRepositoryValue.instantiate(MetaDataRepositoryValue.java:68)
+	at org.apache.openjpa.lib.conf.ObjectValue.instantiate(ObjectValue.java:83)
+	at org.apache.openjpa.conf.OpenJPAConfigurationImpl.newMetaDataRepositoryInstance(OpenJPAConfigurationImpl.java:863)
+	at org.apache.openjpa.conf.OpenJPAConfigurationImpl.getMetaDataRepositoryInstance(OpenJPAConfigurationImpl.java:854)
+	at org.apache.openjpa.kernel.AbstractBrokerFactory.makeReadOnly(AbstractBrokerFactory.java:638)
+	at org.apache.openjpa.kernel.AbstractBrokerFactory.newBroker(AbstractBrokerFactory.java:183)
+	at org.apache.openjpa.kernel.DelegatingBrokerFactory.newBroker(DelegatingBrokerFactory.java:142)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:192)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:56)
+	at org.apache.openejb.persistence.JtaEntityManagerRegistry.getEntityManager(JtaEntityManagerRegistry.java:105)
+	at org.apache.openejb.persistence.JtaEntityManager.getEntityManager(JtaEntityManager.java:72)
+	at org.apache.openejb.persistence.JtaEntityManager.persist(JtaEntityManager.java:110)
+	at ejb.CarEJB.addCar(CarEJB.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:162)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:144)
+	at org.apache.openejb.monitoring.StatsInterceptor.record(StatsInterceptor.java:164)
+	at org.apache.openejb.monitoring.StatsInterceptor.invoke(StatsInterceptor.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:162)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:144)
+	at org.apache.openejb.core.interceptor.InterceptorStack.invoke(InterceptorStack.java:122)
+	at org.apache.openejb.core.stateless.StatelessContainer._invoke(StatelessContainer.java:221)
+	at org.apache.openejb.core.stateless.StatelessContainer.invoke(StatelessContainer.java:174)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler.businessMethod(EjbObjectProxyHandler.java:217)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler._invoke(EjbObjectProxyHandler.java:77)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:282)
+	at $Proxy65.addCar(Unknown Source)
+	at org.apache.jsp.ejblocaltest_jsp._jspService(ejblocaltest_jsp.java:73)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:377)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-feb-27 21:08:47 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-feb-27 21:08:47 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-feb-27 21:09:30 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-feb-27 21:09:30 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-feb-27 21:09:42 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.openjpa.lib.jdbc.ReportingSQLException: CREATE command denied to user 'robwiduser'@'h218n9-tb-a13.ias.bredband.telia.com' for table 'Car' {stmnt 1592123 CREATE TABLE Car (id BIGINT NOT NULL, name VARCHAR(255), PRIMARY KEY (id)) TYPE = innodb} [code=1142, state=42000]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:192)
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$700(LoggingConnectionDecorator.java:57)
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingStatement.executeUpdate(LoggingConnectionDecorator.java:762)
+	at org.apache.openjpa.lib.jdbc.DelegatingStatement.executeUpdate(DelegatingStatement.java:114)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.executeSQL(SchemaTool.java:1191)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.createTable(SchemaTool.java:949)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.add(SchemaTool.java:526)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.add(SchemaTool.java:344)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.run(SchemaTool.java:321)
+	at org.apache.openjpa.jdbc.meta.MappingTool.record(MappingTool.java:501)
+	at org.apache.openjpa.jdbc.meta.MappingTool.record(MappingTool.java:453)
+	at org.apache.openjpa.jdbc.kernel.JDBCBrokerFactory.synchronizeMappings(JDBCBrokerFactory.java:159)
+	at org.apache.openjpa.jdbc.kernel.JDBCBrokerFactory.newBrokerImpl(JDBCBrokerFactory.java:119)
+	at org.apache.openjpa.kernel.AbstractBrokerFactory.newBroker(AbstractBrokerFactory.java:189)
+	at org.apache.openjpa.kernel.DelegatingBrokerFactory.newBroker(DelegatingBrokerFactory.java:142)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:192)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:56)
+	at org.apache.openejb.persistence.JtaEntityManagerRegistry.getEntityManager(JtaEntityManagerRegistry.java:105)
+	at org.apache.openejb.persistence.JtaEntityManager.getEntityManager(JtaEntityManager.java:72)
+	at org.apache.openejb.persistence.JtaEntityManager.persist(JtaEntityManager.java:110)
+	at ejb.CarEJB.addCar(CarEJB.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:162)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:144)
+	at org.apache.openejb.monitoring.StatsInterceptor.record(StatsInterceptor.java:164)
+	at org.apache.openejb.monitoring.StatsInterceptor.invoke(StatsInterceptor.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:162)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:144)
+	at org.apache.openejb.core.interceptor.InterceptorStack.invoke(InterceptorStack.java:122)
+	at org.apache.openejb.core.stateless.StatelessContainer._invoke(StatelessContainer.java:221)
+	at org.apache.openejb.core.stateless.StatelessContainer.invoke(StatelessContainer.java:174)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler.businessMethod(EjbObjectProxyHandler.java:217)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler._invoke(EjbObjectProxyHandler.java:77)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:282)
+	at $Proxy65.addCar(Unknown Source)
+	at org.apache.jsp.ejblocaltest_jsp._jspService(ejblocaltest_jsp.java:73)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:377)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-feb-27 21:10:20 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-feb-27 21:10:20 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-feb-27 21:12:01 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-feb-27 21:12:01 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-feb-27 21:16:40 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-feb-27 21:16:40 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-feb-27 21:20:10 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-feb-27 21:20:10 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-feb-27 21:22:07 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-feb-27 21:22:07 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-feb-27 21:22:24 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-feb-27 21:22:24 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-feb-27 21:23:15 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-feb-27 21:23:15 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()

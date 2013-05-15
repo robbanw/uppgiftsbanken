@@ -1,0 +1,1575 @@
+2013-mar-03 00:13:02 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 00:13:02 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 00:33:04 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 00:33:04 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 00:34:33 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 00:34:33 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 00:41:22 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 00:41:22 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 00:42:16 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 00:42:16 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 00:42:35 org.apache.catalina.core.ApplicationDispatcher invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 34 in the jsp file: /main.jsp
+task.getEmployerID cannot be resolved or is not a field
+31: String employer = "";
+32: for(int i = 0; i < tlist.size();i++){
+33: 	task = (ejb.TaskEntity)tlist.get(i);
+34: 	ee = t.getEmployer(task.getEmployerID);
+35: 	if(ee.getOrganisation().equals("")){
+36: 		employer = ee.getName();
+37: 	}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:646)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:436)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:374)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:302)
+	at LoginController.doPost(LoginController.java:136)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 01:06:57 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 01:06:57 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 01:07:34 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 01:07:34 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 01:07:51 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 27 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: 8 in the jsp file: /viewTask.jsp
+The method getTask(long) in the type TaskLogic is not applicable for the arguments (String)
+5: 	<jsp:forward page="/main.jsp" />
+6: <%}
+7: bean.TaskLogic t = ((bean.TaskLogic)pageContext.getServletContext().getAttribute("task"));
+8: ejb.TaskEntity te = t.getTask(request.getParameter("tid"));
+9: if(te == null){{%>
+10: 	<jsp:forward page="/main.jsp" />
+11: <%}%>
+
+
+An error occurred at line: 14 in the jsp file: /viewTask.jsp
+te.getTitle cannot be resolved or is not a field
+11: <%}%>
+12: <html>
+13: <head>
+14: <title>Uppgift - <%=te.getTitle%></title>
+15: </head>
+16: <link href="TaskLayout.css" rel="stylesheet"></link>
+17: <body>
+
+
+An error occurred at line: 26 in the jsp file: /viewTask.jsp
+te.getTitle cannot be resolved or is not a field
+23: <input type="hidden" name="action" value="main"></input>
+24: <input class="topmenu" type="submit" value="Visa alla uppgifter"></input>
+25: </form>
+26: <h1><%=te.getTitle%></h1>
+27: <p class="viewTask"><%=te.getDescription%></p>
+28: </body>
+
+
+An error occurred at line: 27 in the jsp file: /viewTask.jsp
+te.getDescription cannot be resolved or is not a field
+24: <input class="topmenu" type="submit" value="Visa alla uppgifter"></input>
+25: </form>
+26: <h1><%=te.getTitle%></h1>
+27: <p class="viewTask"><%=te.getDescription%></p>
+28: </body>
+
+
+An error occurred at line: 112 in the generated java file
+Syntax error, insert "else Statement" to complete IfStatement
+
+An error occurred at line: 112 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 112 in the generated java file
+Syntax error, insert "else Statement" to complete IfStatement
+
+An error occurred at line: 112 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 123 in the generated java file
+Syntax error on token "}", delete this token
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 01:09:27 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 27 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: 14 in the jsp file: /viewTask.jsp
+te.getTitle cannot be resolved or is not a field
+11: <%}%>
+12: <html>
+13: <head>
+14: <title>Uppgift - <%=te.getTitle%></title>
+15: </head>
+16: <link href="TaskLayout.css" rel="stylesheet"></link>
+17: <body>
+
+
+An error occurred at line: 26 in the jsp file: /viewTask.jsp
+te.getTitle cannot be resolved or is not a field
+23: <input type="hidden" name="action" value="main"></input>
+24: <input class="topmenu" type="submit" value="Visa alla uppgifter"></input>
+25: </form>
+26: <h1><%=te.getTitle%></h1>
+27: <p class="viewTask"><%=te.getDescription%></p>
+28: </body>
+
+
+An error occurred at line: 27 in the jsp file: /viewTask.jsp
+te.getDescription cannot be resolved or is not a field
+24: <input class="topmenu" type="submit" value="Visa alla uppgifter"></input>
+25: </form>
+26: <h1><%=te.getTitle%></h1>
+27: <p class="viewTask"><%=te.getDescription%></p>
+28: </body>
+
+
+An error occurred at line: 112 in the generated java file
+Syntax error, insert "else Statement" to complete IfStatement
+
+An error occurred at line: 112 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 112 in the generated java file
+Syntax error, insert "else Statement" to complete IfStatement
+
+An error occurred at line: 112 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 123 in the generated java file
+Syntax error on token "}", delete this token
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 01:09:56 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 14 in the jsp file: /viewTask.jsp
+te.getTitle cannot be resolved or is not a field
+11: <%}%>
+12: <html>
+13: <head>
+14: <title>Uppgift - <%=te.getTitle%></title>
+15: </head>
+16: <link href="TaskLayout.css" rel="stylesheet"></link>
+17: <body>
+
+
+An error occurred at line: 26 in the jsp file: /viewTask.jsp
+te.getTitle cannot be resolved or is not a field
+23: <input type="hidden" name="action" value="main"></input>
+24: <input class="topmenu" type="submit" value="Visa alla uppgifter"></input>
+25: </form>
+26: <h1><%=te.getTitle%></h1>
+27: <p class="viewTask"><%=te.getDescription%></p>
+28: </body>
+
+
+An error occurred at line: 27 in the jsp file: /viewTask.jsp
+te.getDescription cannot be resolved or is not a field
+24: <input class="topmenu" type="submit" value="Visa alla uppgifter"></input>
+25: </form>
+26: <h1><%=te.getTitle%></h1>
+27: <p class="viewTask"><%=te.getDescription%></p>
+28: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 01:24:56 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 01:24:56 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 12:57:46 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 12:57:46 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 12:59:21 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet TaskController threw exception
+java.lang.NullPointerException
+	at TaskController.doGet(TaskController.java:35)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 13:01:13 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 13:01:13 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 13:01:16 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 13:01:16 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 13:01:32 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 13:01:32 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 13:01:35 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 13:01:35 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 13:01:58 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 13:01:58 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 13:02:01 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 13:02:01 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 13:02:26 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 13:02:26 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 13:02:40 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 13:02:40 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 13:10:34 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 30 in the jsp file: /viewTask.jsp
+Type mismatch: cannot convert from short to boolean
+27: <input class="topmenu" type="submit" value="Visa alla uppgifter"/>
+28: </form>
+29: <p class="viewTask"><%=description%></p>
+30: <%if(te.getOpen()){%>
+31: 	<form class="topmenu" action="/TaskController">
+32: 	<input type="hidden" name="action" value="apply"/>
+33: 	<input class="centeredButton" type="submit" value="Anmäl intresse!"/>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 15:35:55 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 15:35:55 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 15:56:09 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 15:56:09 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 15:56:32 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 17 in the jsp file: /viewTask.jsp
+The operator != is undefined for the argument type(s) long, null
+14: <%}
+15: ejb.StudentEntity se = (ejb.StudentEntity)request.getSession().getAttribute("user");
+16: boolean applied = false;
+17: if(t.findEntry(se.getId(),te.getId() != null){
+18: 	applied = true;
+19: }
+20: String description = te.getDescription().replaceAll("\n", "<br/>\n");
+
+
+An error occurred at line: 17 in the jsp file: /viewTask.jsp
+Syntax error, insert ") Statement" to complete IfStatement
+14: <%}
+15: ejb.StudentEntity se = (ejb.StudentEntity)request.getSession().getAttribute("user");
+16: boolean applied = false;
+17: if(t.findEntry(se.getId(),te.getId() != null){
+18: 	applied = true;
+19: }
+20: String description = te.getDescription().replaceAll("\n", "<br/>\n");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 15:56:58 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 17 in the jsp file: /viewTask.jsp
+The method findEntry(long, long) is undefined for the type TaskLogic
+14: <%}
+15: ejb.StudentEntity se = (ejb.StudentEntity)request.getSession().getAttribute("user");
+16: boolean applied = false;
+17: if(t.findEntry(se.getId(),te.getId()) != null){
+18: 	applied = true;
+19: }
+20: String description = te.getDescription().replaceAll("\n", "<br/>\n");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 15:57:53 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 15:57:53 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 16:00:11 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 16:00:11 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 16:00:33 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+<openjpa-1.2.1-r752877:753278 nonfatal user error> org.apache.openjpa.persistence.ArgumentException: An error occurred while parsing the query filter "SELECT OBJECT(st) FROM StudentEntity st WHERE st.studentID = 101 AND st.taskID = 301". Error message: No field named "studentID" in class "class ejb.StudentEntity".
+	at org.apache.openjpa.kernel.exps.AbstractExpressionBuilder.parseException(AbstractExpressionBuilder.java:118)
+	at org.apache.openjpa.kernel.exps.AbstractExpressionBuilder.traversePath(AbstractExpressionBuilder.java:284)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.getPath(JPQLExpressionBuilder.java:1382)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.getPathOrConstant(JPQLExpressionBuilder.java:1337)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.eval(JPQLExpressionBuilder.java:880)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.getValue(JPQLExpressionBuilder.java:1431)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.getValue(JPQLExpressionBuilder.java:1417)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.eval(JPQLExpressionBuilder.java:773)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.getExpression(JPQLExpressionBuilder.java:1408)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.eval(JPQLExpressionBuilder.java:769)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.getExpression(JPQLExpressionBuilder.java:1408)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.eval(JPQLExpressionBuilder.java:723)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.evalWhereClause(JPQLExpressionBuilder.java:498)
+	at org.apache.openjpa.kernel.jpql.JPQLExpressionBuilder.getQueryExpressions(JPQLExpressionBuilder.java:273)
+	at org.apache.openjpa.kernel.jpql.JPQLParser.eval(JPQLParser.java:62)
+	at org.apache.openjpa.kernel.ExpressionStoreQuery$DataStoreExecutor.<init>(ExpressionStoreQuery.java:661)
+	at org.apache.openjpa.kernel.ExpressionStoreQuery.newDataStoreExecutor(ExpressionStoreQuery.java:170)
+	at org.apache.openjpa.kernel.QueryImpl.createExecutor(QueryImpl.java:734)
+	at org.apache.openjpa.kernel.QueryImpl.compileForDataStore(QueryImpl.java:692)
+	at org.apache.openjpa.kernel.QueryImpl.compileForExecutor(QueryImpl.java:674)
+	at org.apache.openjpa.kernel.QueryImpl.getOperation(QueryImpl.java:1492)
+	at org.apache.openjpa.kernel.DelegatingQuery.getOperation(DelegatingQuery.java:123)
+	at org.apache.openjpa.persistence.QueryImpl.execute(QueryImpl.java:243)
+	at org.apache.openjpa.persistence.QueryImpl.getResultList(QueryImpl.java:294)
+	at ejb.StudentToTaskEJB.findEntry(StudentToTaskEJB.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:162)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:144)
+	at org.apache.openejb.monitoring.StatsInterceptor.record(StatsInterceptor.java:164)
+	at org.apache.openejb.monitoring.StatsInterceptor.invoke(StatsInterceptor.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:162)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:144)
+	at org.apache.openejb.core.interceptor.InterceptorStack.invoke(InterceptorStack.java:122)
+	at org.apache.openejb.core.stateless.StatelessContainer._invoke(StatelessContainer.java:221)
+	at org.apache.openejb.core.stateless.StatelessContainer.invoke(StatelessContainer.java:174)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler.businessMethod(EjbObjectProxyHandler.java:217)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler._invoke(EjbObjectProxyHandler.java:77)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:282)
+	at $Proxy69.findEntry(Unknown Source)
+	at bean.TaskLogic.findEntry(TaskLogic.java:111)
+	at org.apache.jsp.viewTask_jsp._jspService(viewTask_jsp.java:101)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:377)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 16:02:30 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 16:02:30 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 16:02:48 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 16:02:48 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 16:04:24 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 16:04:24 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 16:04:40 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 16:04:40 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 16:31:50 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 16:31:50 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 17:30:29 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 17:30:29 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 17:30:44 org.apache.catalina.core.ApplicationDispatcher invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 38 in the jsp file: /employer.jsp
+StudenToTask cannot be resolved to a type
+35: <%bean.TaskLogic t = ((bean.TaskLogic)pageContext.getServletContext().getAttribute("task"));
+36: List<ejb.TaskEntity> tlist = t.findByEmployer(ee.getId());
+37: ejb.TaskEntity task;
+38: List<StudenToTask> tslist;
+39: for(int i = 0; i < tlist.size(); i++){
+40: 	task = tlist.get(i);
+41: 	tslist = t.getNrOfApplicants(task.getId());
+
+
+An error occurred at line: 41 in the jsp file: /employer.jsp
+The method getNrOfApplicants(long) is undefined for the type TaskLogic
+38: List<StudenToTask> tslist;
+39: for(int i = 0; i < tlist.size(); i++){
+40: 	task = tlist.get(i);
+41: 	tslist = t.getNrOfApplicants(task.getId());
+42: %>
+43: <tr><td><a href="administerTask.jsp?tid=<%=task.getId()%>"><%=task.getTitle()%></a></td><td><%=tslist.size()%></tr>
+44: <%}%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:646)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:436)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:374)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:302)
+	at LoginController.doPost(LoginController.java:149)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:31:44 org.apache.catalina.core.ApplicationDispatcher invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 38 in the jsp file: /employer.jsp
+ejb.StudenToTask cannot be resolved to a type
+35: <%bean.TaskLogic t = ((bean.TaskLogic)pageContext.getServletContext().getAttribute("task"));
+36: List<ejb.TaskEntity> tlist = t.findByEmployer(ee.getId());
+37: ejb.TaskEntity task;
+38: List<ejb.StudenToTask> tslist;
+39: for(int i = 0; i < tlist.size(); i++){
+40: 	task = tlist.get(i);
+41: 	tslist = t.getNrOfApplicants(task.getId());
+
+
+An error occurred at line: 41 in the jsp file: /employer.jsp
+The method getNrOfApplicants(long) is undefined for the type TaskLogic
+38: List<ejb.StudenToTask> tslist;
+39: for(int i = 0; i < tlist.size(); i++){
+40: 	task = tlist.get(i);
+41: 	tslist = t.getNrOfApplicants(task.getId());
+42: %>
+43: <tr><td><a href="administerTask.jsp?tid=<%=task.getId()%>"><%=task.getTitle()%></a></td><td><%=tslist.size()%></tr>
+44: <%}%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:646)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:436)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:374)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:302)
+	at LoginController.doPost(LoginController.java:149)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:32:56 org.apache.catalina.core.ApplicationDispatcher invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 41 in the jsp file: /employer.jsp
+The method getNrOfApplicants(long) is undefined for the type TaskLogic
+38: List<ejb.StudentToTask> tslist;
+39: for(int i = 0; i < tlist.size(); i++){
+40: 	task = tlist.get(i);
+41: 	tslist = t.getNrOfApplicants(task.getId());
+42: %>
+43: <tr><td><a href="administerTask.jsp?tid=<%=task.getId()%>"><%=task.getTitle()%></a></td><td><%=tslist.size()%></tr>
+44: <%}%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:646)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:436)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:374)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:302)
+	at LoginController.doPost(LoginController.java:149)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:36:06 org.apache.catalina.core.ApplicationDispatcher invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 41 in the jsp file: /employer.jsp
+The method getNrOfApplicants(long) is undefined for the type TaskLogic
+38: List<ejb.StudentToTask> tslist;
+39: for(int i = 0; i < tlist.size(); i++){
+40: 	task = tlist.get(i);
+41: 	tslist = t.getNrOfApplicants(task.getId());
+42: %>
+43: <tr><td><a href="administerTask.jsp?tid=<%=task.getId()%>"><%=task.getTitle()%></a></td><td><%=tslist.size()%></tr>
+44: <%}%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:646)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:436)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:374)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:302)
+	at LoginController.doPost(LoginController.java:149)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:39:17 org.apache.catalina.core.ApplicationDispatcher invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 41 in the jsp file: /employer.jsp
+The method getNrOfApplicants(long) is undefined for the type TaskLogic
+38: List<ejb.StudentToTaskEntity> tslist;
+39: for(int i = 0; i < tlist.size(); i++){
+40: 	task = tlist.get(i);
+41: 	tslist = t.getNrOfApplicants(task.getId());
+42: %>
+43: <tr><td><a href="administerTask.jsp?tid=<%=task.getId()%>"><%=task.getTitle()%></a></td><td><%=tslist.size()%></tr>
+44: <%}%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:646)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:436)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:374)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:302)
+	at LoginController.doPost(LoginController.java:149)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:40:15 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 17:40:15 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 17:40:35 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 17:40:35 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 17:40:56 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 37 in the jsp file: /administerTask.jsp
+Duplicate local variable t
+34: <p>Klicka på namnet för att se studentens CV</p>
+35: <table>
+36: <th>Intresserade studenter</th><th>E-mail</th>
+37: <%bean.TaskLogic t = ((bean.TaskLogic)pageContext.getServletContext().getAttribute("task"));
+38: ejb.TaskEntity task;
+39: ejb.StudentEntity se;
+40: List<StudenToTask> tslist = t.getNrOfApplicants(task.getId());
+
+
+An error occurred at line: 40 in the jsp file: /administerTask.jsp
+List cannot be resolved to a type
+37: <%bean.TaskLogic t = ((bean.TaskLogic)pageContext.getServletContext().getAttribute("task"));
+38: ejb.TaskEntity task;
+39: ejb.StudentEntity se;
+40: List<StudenToTask> tslist = t.getNrOfApplicants(task.getId());
+41: for(int i = 0; i < tslist.size(); i++){
+42: 	task = tslist.get(i);
+43: 	se = t.getStudent(task.getId());
+
+
+An error occurred at line: 40 in the jsp file: /administerTask.jsp
+StudenToTask cannot be resolved to a type
+37: <%bean.TaskLogic t = ((bean.TaskLogic)pageContext.getServletContext().getAttribute("task"));
+38: ejb.TaskEntity task;
+39: ejb.StudentEntity se;
+40: List<StudenToTask> tslist = t.getNrOfApplicants(task.getId());
+41: for(int i = 0; i < tslist.size(); i++){
+42: 	task = tslist.get(i);
+43: 	se = t.getStudent(task.getId());
+
+
+An error occurred at line: 154 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 164 in the generated java file
+Syntax error on token "}", delete this token
+
+An error occurred at line: 165 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:41:43 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /administerTask.jsp
+List cannot be resolved to a type
+36: <th>Intresserade studenter</th><th>E-mail</th>
+37: <%ejb.TaskEntity task;
+38: ejb.StudentEntity se;
+39: List<StudenToTask> tslist = t.getNrOfApplicants(task.getId());
+40: for(int i = 0; i < tslist.size(); i++){
+41: 	task = tslist.get(i);
+42: 	se = t.getStudent(task.getId());
+
+
+An error occurred at line: 39 in the jsp file: /administerTask.jsp
+StudenToTask cannot be resolved to a type
+36: <th>Intresserade studenter</th><th>E-mail</th>
+37: <%ejb.TaskEntity task;
+38: ejb.StudentEntity se;
+39: List<StudenToTask> tslist = t.getNrOfApplicants(task.getId());
+40: for(int i = 0; i < tslist.size(); i++){
+41: 	task = tslist.get(i);
+42: 	se = t.getStudent(task.getId());
+
+
+An error occurred at line: 153 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 163 in the generated java file
+Syntax error on token "}", delete this token
+
+An error occurred at line: 164 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:42:03 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 40 in the jsp file: /administerTask.jsp
+StudenToTask cannot be resolved to a type
+37: <th>Intresserade studenter</th><th>E-mail</th>
+38: <%ejb.TaskEntity task;
+39: ejb.StudentEntity se;
+40: List<StudenToTask> tslist = t.getNrOfApplicants(task.getId());
+41: for(int i = 0; i < tslist.size(); i++){
+42: 	task = tslist.get(i);
+43: 	se = t.getStudent(task.getId());
+
+
+An error occurred at line: 156 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 166 in the generated java file
+Syntax error on token "}", delete this token
+
+An error occurred at line: 167 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:42:23 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 40 in the jsp file: /administerTask.jsp
+ejb.StudenToTaskEntity cannot be resolved to a type
+37: <th>Intresserade studenter</th><th>E-mail</th>
+38: <%ejb.TaskEntity task;
+39: ejb.StudentEntity se;
+40: List<ejb.StudenToTaskEntity> tslist = t.getNrOfApplicants(task.getId());
+41: for(int i = 0; i < tslist.size(); i++){
+42: 	task = tslist.get(i);
+43: 	se = t.getStudent(task.getId());
+
+
+An error occurred at line: 156 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 166 in the generated java file
+Syntax error on token "}", delete this token
+
+An error occurred at line: 167 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:42:33 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 42 in the jsp file: /administerTask.jsp
+Type mismatch: cannot convert from StudentToTaskEntity to TaskEntity
+39: ejb.StudentEntity se;
+40: List<ejb.StudentToTaskEntity> tslist = t.getNrOfApplicants(task.getId());
+41: for(int i = 0; i < tslist.size(); i++){
+42: 	task = tslist.get(i);
+43: 	se = t.getStudent(task.getId());
+44: %>
+45: <tr><td><a href="administerTask.jsp?tid=<%=se.getId()%>"><%=se.getName()%></a></td><td><%=se.getEmail()%></tr>
+
+
+An error occurred at line: 156 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 166 in the generated java file
+Syntax error on token "}", delete this token
+
+An error occurred at line: 167 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:43:27 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /administerTask.jsp
+task cannot be resolved
+36: <table>
+37: <th>Intresserade studenter</th><th>E-mail</th>
+38: <%ejb.StudentEntity se;
+39: List<ejb.StudentToTaskEntity> tslist = t.getNrOfApplicants(task.getId());
+40: for(int i = 0; i < tslist.size(); i++){
+41: 	se = t.getStudent(tslist.get(i).getId());
+42: %>
+
+
+An error occurred at line: 41 in the jsp file: /administerTask.jsp
+The method getId() is undefined for the type StudentToTaskEntity
+38: <%ejb.StudentEntity se;
+39: List<ejb.StudentToTaskEntity> tslist = t.getNrOfApplicants(task.getId());
+40: for(int i = 0; i < tslist.size(); i++){
+41: 	se = t.getStudent(tslist.get(i).getId());
+42: %>
+43: <tr><td><a href="administerTask.jsp?tid=<%=se.getId()%>"><%=se.getName()%></a></td><td><%=se.getEmail()%></tr>
+44: </table>
+
+
+An error occurred at line: 154 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 164 in the generated java file
+Syntax error on token "}", delete this token
+
+An error occurred at line: 165 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:44:22 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 41 in the jsp file: /administerTask.jsp
+The method getId() is undefined for the type StudentToTaskEntity
+38: <%ejb.StudentEntity se;
+39: List<ejb.StudentToTaskEntity> tslist = t.getNrOfApplicants(te.getId());
+40: for(int i = 0; i < tslist.size(); i++){
+41: 	se = t.getStudent(tslist.get(i).getId());
+42: %>
+43: <tr><td><a href="administerTask.jsp?tid=<%=se.getId()%>"><%=se.getName()%></a></td><td><%=se.getEmail()%></tr>
+44: </table>
+
+
+An error occurred at line: 154 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 164 in the generated java file
+Syntax error on token "}", delete this token
+
+An error occurred at line: 165 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 17:46:11 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 15 in the jsp file: /viewStudent.jsp
+te cannot be resolved
+12: if(se == null){%>
+13: 	<jsp:forward page="/employer.jsp" />
+14: <%}
+15: String resume = te.getResume().replaceAll("\n", "<br/>\n");
+16: %>
+17: <html>
+18: <head>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:589)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 18:00:30 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 18:00:30 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 22:17:17 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 22:17:17 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 22:32:12 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 22:32:12 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 22:32:29 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 22:32:29 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 22:36:10 org.apache.catalina.core.ApplicationDispatcher invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException
+	at org.apache.jsp.main_jsp._jspService(main_jsp.java:68)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:377)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:646)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:436)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:374)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:302)
+	at LoginController.doPost(LoginController.java:149)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 22:51:57 org.apache.catalina.core.ApplicationDispatcher invoke
+ALLVARLIG: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException
+	at org.apache.jsp.main_jsp._jspService(main_jsp.java:68)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:377)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:646)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:436)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:374)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:302)
+	at LoginController.doPost(LoginController.java:149)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+2013-mar-03 23:03:06 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 23:03:06 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 23:05:29 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 23:05:29 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 23:07:52 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 23:07:52 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 23:09:17 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 23:09:17 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 23:10:03 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 23:10:03 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 23:10:46 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 23:10:46 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 23:11:02 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet LoginController threw exception
+javax.ejb.EJBException: The bean encountered a non-application exception; nested exception is: 
+	<openjpa-1.2.1-r752877:753278 nonfatal general error> org.apache.openjpa.persistence.PersistenceException: Duplicate key name 'UNQ_' {stmnt 21599766 CREATE TABLE Student (id BIGINT NOT NULL, email VARCHAR(255) NOT NULL, name VARCHAR(255), password VARCHAR(255), resume varchar(1024), username VARCHAR(255) NOT NULL, PRIMARY KEY (id), UNIQUE UNQ_ (email), UNIQUE UNQ_ (username)) TYPE = innodb} [code=1061, state=42000]
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.convertException(BaseEjbProxyHandler.java:359)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:287)
+	at $Proxy65.addStudent(Unknown Source)
+	at bean.LoginValidator.addStudent(LoginValidator.java:89)
+	at LoginController.doPost(LoginController.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: <openjpa-1.2.1-r752877:753278 nonfatal general error> org.apache.openjpa.persistence.PersistenceException: Duplicate key name 'UNQ_' {stmnt 21599766 CREATE TABLE Student (id BIGINT NOT NULL, email VARCHAR(255) NOT NULL, name VARCHAR(255), password VARCHAR(255), resume varchar(1024), username VARCHAR(255) NOT NULL, PRIMARY KEY (id), UNIQUE UNQ_ (email), UNIQUE UNQ_ (username)) TYPE = innodb} [code=1061, state=42000]
+	at org.apache.openjpa.jdbc.meta.MappingTool.record(MappingTool.java:553)
+	at org.apache.openjpa.jdbc.meta.MappingTool.record(MappingTool.java:453)
+	at org.apache.openjpa.jdbc.kernel.JDBCBrokerFactory.synchronizeMappings(JDBCBrokerFactory.java:159)
+	at org.apache.openjpa.jdbc.kernel.JDBCBrokerFactory.newBrokerImpl(JDBCBrokerFactory.java:119)
+	at org.apache.openjpa.kernel.AbstractBrokerFactory.newBroker(AbstractBrokerFactory.java:189)
+	at org.apache.openjpa.kernel.DelegatingBrokerFactory.newBroker(DelegatingBrokerFactory.java:142)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:192)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:56)
+	at org.apache.openejb.persistence.JtaEntityManagerRegistry.getEntityManager(JtaEntityManagerRegistry.java:105)
+	at org.apache.openejb.persistence.JtaEntityManager.getEntityManager(JtaEntityManager.java:72)
+	at org.apache.openejb.persistence.JtaEntityManager.persist(JtaEntityManager.java:110)
+	at ejb.StudentEJB.addStudent(StudentEJB.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:162)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:144)
+	at org.apache.openejb.monitoring.StatsInterceptor.record(StatsInterceptor.java:164)
+	at org.apache.openejb.monitoring.StatsInterceptor.invoke(StatsInterceptor.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:162)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:144)
+	at org.apache.openejb.core.interceptor.InterceptorStack.invoke(InterceptorStack.java:122)
+	at org.apache.openejb.core.stateless.StatelessContainer._invoke(StatelessContainer.java:221)
+	at org.apache.openejb.core.stateless.StatelessContainer.invoke(StatelessContainer.java:174)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler.businessMethod(EjbObjectProxyHandler.java:217)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler._invoke(EjbObjectProxyHandler.java:77)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:282)
+	... 18 more
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: Duplicate key name 'UNQ_' {stmnt 21599766 CREATE TABLE Student (id BIGINT NOT NULL, email VARCHAR(255) NOT NULL, name VARCHAR(255), password VARCHAR(255), resume varchar(1024), username VARCHAR(255) NOT NULL, PRIMARY KEY (id), UNIQUE UNQ_ (email), UNIQUE UNQ_ (username)) TYPE = innodb} [code=1061, state=42000]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:192)
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$700(LoggingConnectionDecorator.java:57)
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingStatement.executeUpdate(LoggingConnectionDecorator.java:762)
+	at org.apache.openjpa.lib.jdbc.DelegatingStatement.executeUpdate(DelegatingStatement.java:114)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.executeSQL(SchemaTool.java:1191)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.createTable(SchemaTool.java:949)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.add(SchemaTool.java:526)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.add(SchemaTool.java:344)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.run(SchemaTool.java:321)
+	at org.apache.openjpa.jdbc.meta.MappingTool.record(MappingTool.java:501)
+	... 49 more
+2013-mar-03 23:11:52 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 23:11:52 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 23:12:16 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 23:12:16 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 23:12:49 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet LoginController threw exception
+javax.ejb.EJBTransactionRolledbackException: Transaction was rolled back, presumably because setRollbackOnly was called during a synchronization
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.convertException(BaseEjbProxyHandler.java:341)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:287)
+	at $Proxy65.addStudent(Unknown Source)
+	at bean.LoginValidator.addStudent(LoginValidator.java:89)
+	at LoginController.doPost(LoginController.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: javax.transaction.RollbackException: Unable to commit: transaction marked for rollback
+	at org.apache.geronimo.transaction.manager.TransactionImpl.commit(TransactionImpl.java:271)
+	at org.apache.geronimo.transaction.manager.TransactionManagerImpl.commit(TransactionManagerImpl.java:245)
+	at org.apache.openejb.core.transaction.JtaTransactionPolicy.completeTransaction(JtaTransactionPolicy.java:291)
+	at org.apache.openejb.core.transaction.TxRequired.commit(TxRequired.java:75)
+	at org.apache.openejb.core.transaction.EjbTransactionUtil.afterInvoke(EjbTransactionUtil.java:74)
+	at org.apache.openejb.core.stateless.StatelessContainer._invoke(StatelessContainer.java:241)
+	at org.apache.openejb.core.stateless.StatelessContainer.invoke(StatelessContainer.java:174)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler.businessMethod(EjbObjectProxyHandler.java:217)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler._invoke(EjbObjectProxyHandler.java:77)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:282)
+	... 18 more
+2013-mar-03 23:14:56 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 23:14:56 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 23:21:11 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 23:21:11 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 23:21:44 org.apache.catalina.core.StandardWrapperValve invoke
+ALLVARLIG: Servlet.service() for servlet LoginController threw exception
+javax.ejb.EJBTransactionRolledbackException: Transaction was rolled back, presumably because setRollbackOnly was called during a synchronization
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.convertException(BaseEjbProxyHandler.java:341)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:287)
+	at $Proxy65.addStudent(Unknown Source)
+	at bean.LoginValidator.addStudent(LoginValidator.java:89)
+	at LoginController.doPost(LoginController.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.openejb.tomcat.catalina.OpenEJBValve.invoke(OpenEJBValve.java:45)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: javax.transaction.RollbackException: Unable to commit: transaction marked for rollback
+	at org.apache.geronimo.transaction.manager.TransactionImpl.commit(TransactionImpl.java:271)
+	at org.apache.geronimo.transaction.manager.TransactionManagerImpl.commit(TransactionManagerImpl.java:245)
+	at org.apache.openejb.core.transaction.JtaTransactionPolicy.completeTransaction(JtaTransactionPolicy.java:291)
+	at org.apache.openejb.core.transaction.TxRequired.commit(TxRequired.java:75)
+	at org.apache.openejb.core.transaction.EjbTransactionUtil.afterInvoke(EjbTransactionUtil.java:74)
+	at org.apache.openejb.core.stateless.StatelessContainer._invoke(StatelessContainer.java:241)
+	at org.apache.openejb.core.stateless.StatelessContainer.invoke(StatelessContainer.java:174)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler.businessMethod(EjbObjectProxyHandler.java:217)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler._invoke(EjbObjectProxyHandler.java:77)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:282)
+	... 18 more
+2013-mar-03 23:36:27 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 23:36:27 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+2013-mar-03 23:36:44 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+2013-mar-03 23:36:44 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+2013-mar-03 23:37:36 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+2013-mar-03 23:37:36 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
